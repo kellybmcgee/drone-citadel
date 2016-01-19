@@ -1,0 +1,36 @@
+.row .intro-1st {
+  background: green;
+  height: 578px;
+}
+
+.intro-2nd {
+  background: lightgray;
+  height: 578px;
+}
+
+.intro-3rd {
+  background: green;
+  height: 578px;
+}
+
+.intro-4th {
+  background: lightgray;
+  height: 578px;
+}
+
+
+@media all and ( min-width: 600px ) {
+
+  .row {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  [class*="col-"] {
+    display: table-cell;
+  }
+
+  .col-1-2 {
+     width: 100%;
+   }
