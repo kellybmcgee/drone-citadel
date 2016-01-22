@@ -1,18 +1,12 @@
 ul {border: 1px red solid;}
 li {border: 1px green solid;}
-p {border: 1px blue solid;}
 h2 {border: 1px purple solid;}
 h4 {border: 1px orange solid;}
 h5 {border: 1px white solid;}
 a {border: 1px white yellow;}
 
-.container-fluid {
 
-}
 
-.row {
-
-}
 
 /*first banner*/
 
@@ -20,29 +14,39 @@ a {border: 1px white yellow;}
   position: absolute;
   top: 180px;
   /*left: 30px;*/
-  border: 1px white solid;
-  width: 50%;
+  width: 75%;
   z-index: 4444;
 }
 
 #intro-1st h1 {
   z-index: 20;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
 #intro-1st p {
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
 #intro-1st a {
   color: white;
   background: red;
-  padding: 16px;
+  padding: 16px 0;
+  width: 200px;
   border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  display:block;
+  background: red;
 }
+
 
 #intro-1st {
   height: 667px;
+
 }
 
 /*second banner*/
@@ -77,6 +81,7 @@ a {border: 1px white yellow;}
 }
 
 
-@media all and ( min-width: 600px ) {
-
+@media screen and ( min-width: 600px ) {
+.intro-1st-content {
+}
 }
