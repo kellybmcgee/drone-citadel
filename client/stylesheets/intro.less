@@ -4,9 +4,13 @@ h2 {border: 1px purple solid;}
 h4 {border: 1px orange solid;}
 h5 {border: 1px white solid;}
 a {border: 1px white yellow;}
-
-
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
 /*first banner*/
+
+.container-fluid {
+  background: rgba(209, 209, 209, 0.5);
+}
 
 .intro-1st-content {
   position: absolute;
@@ -14,9 +18,13 @@ a {border: 1px white yellow;}
   /*left: 30px;*/
   width: 75%;
   z-index: 4444;
+  margin: 55px 0 0 40px;
 }
 
 #intro-1st h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   z-index: 20;
   color: white;
   padding: 0;
@@ -27,19 +35,39 @@ a {border: 1px white yellow;}
   color: white;
   padding: 0;
   margin: 0;
+  font-size: 25px;
+  text-transform: uppercase;
 }
 
-#intro-1st a {
-  color: white;
-  background: red;
-  padding: 16px 0;
-  width: 200px;
-  border-radius: 8px;
+.intro-1st-content a {
+  margin-top: 25px;
+  display: block;
+  padding: 20px 0;
+  width:255px;
   text-decoration: none;
-  text-align: center;
-  display:block;
-  background: red;
+  font-size: 40px;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+
+
+  &:hover .btn-bottom {
+    max-width:0;
+  }
 }
+
+a .btn-bottom {
+  position:absolute;
+  width: 100%;
+  bottom:20%;
+  max-width: 100%;
+  left: 0;
+  border-bottom: #F24236 3px solid;
+  transition:all .3s ease-in-out;
+}
+
+
+
 
 
 #intro-1st {
