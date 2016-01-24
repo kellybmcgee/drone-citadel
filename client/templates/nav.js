@@ -4,7 +4,7 @@ Template.nav.onRendered(function() {
 	});
 
 	$(window).scroll(function(){
-		 if ($(this).scrollTop() > 750) {
+		 if ($(this).scrollTop() > 667) {
 		 	$(".top-nav").css("background", "#5e7a8b");
 		 } else {
 			$(".top-nav").css("background", "none");
