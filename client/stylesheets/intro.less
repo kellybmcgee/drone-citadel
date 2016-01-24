@@ -14,11 +14,13 @@ font-family: 'Lato', sans-serif;
 
 .intro-1st-content {
   position: absolute;
-  top: 180px;
+
+  top:100px;
+  padding: 120px 0 0 40px;
   /*left: 30px;*/
-  width: 75%;
-  z-index: 4444;
-  margin: 55px 0 0 40px;
+  width: 90%;
+  z-index: 200;
+  margin: 0 auto;
 }
 
 #intro-1st h1 {
@@ -43,12 +45,18 @@ font-family: 'Lato', sans-serif;
   margin-top: 25px;
   display: block;
   padding: 20px 0;
-  width:223px;
+  width:222px;
   text-decoration: none;
   font-size: 35px;
   color: white;
   position: relative;
   text-transform: uppercase;
+  transition: all .5s ease-in-out;
+
+
+  &:hover {
+    color:#F24236;
+  }
 
 
   &:hover .btn-bottom {
@@ -57,7 +65,7 @@ font-family: 'Lato', sans-serif;
 }
 
 a .btn-bottom {
-  position:absolute;
+  position:relative;
   width: 100%;
   bottom:20%;
   max-width: 100%;
@@ -127,10 +135,4 @@ a .btn-bottom {
 
 #intro-5th {
   background: white;
-}
-
-
-@media screen and ( min-width: 600px ) {
-.intro-1st-content {
-}
 }

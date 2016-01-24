@@ -12,59 +12,88 @@ p {
 .top-nav {
 	position: fixed;
 	width: 100%;
-	height: 75px;
-	z-index: 100;
+	height: 60px;
 	display: table;
+	z-index: 1000;
 
-	.vertical {
-		display: table-cell;
-		vertical-align: middle;
-		width: 100%;
-		height: 32px;
-		padding-left: 20px;
-		padding-right: 20px;
 
 	h1 {
-		float: left;
+		display: table-cell;
+		vertical-align: middle;
 		margin: 0;
-		padding: 5px 0;
 		color: white;
 		letter-spacing: 2px;
+		padding-left:20px;
 
+	}
+
+	.center-header {
+		display: table;
+		float:left;
+		height: 100%;
 	}
 
 
 
 	.menu-container {
 		display: none;
+		height: 100%;
+		float: right;
+		padding-right: 10px;
+		padding-top: 7px;
 
 		.menu {
 			display: none;
+			vertical-align: middle;
+		
+
+			a {
+				img {
+					width:40px;
+					height: 25px;
+				}
+			}
 		}
 
 	}
 
-	ul {
+	.center-btn {
+		height: 100%;
+		display: table;
 		float: right;
+		width: 50%;
+	}
+
+	ul {
 		margin: 0;
 		border: none;
-		width: 50%;
+		display:table-cell;
+		vertical-align: middle;
+		padding-right: 10px;
 
 		li {
 			display: inline-block;
 			float: right;
-			height: 100%;
-			padding: 12px 0;
 			border: none;
 			width: 75px;
-			margin-right: 10px;
+			margin-right: 20px;
 			text-align: center;
 			position: relative;
 
 				&:hover .border-bottom {
-
 						max-width: 100%;
 					}
+				&:first-child {
+						width: 70px;
+				}
+
+				&:nth-child(2){
+						width: 45px;
+				}
+
+				&:last-child{
+						width:55px;
+				}
 					
 
 
@@ -89,7 +118,7 @@ p {
 				left: 0;
 				max-width: 0;
 				width: 100%;
-				bottom: 17%;
+				bottom: -15%;
 				border-bottom: 2px #F24236 solid;
 				transition: all .3s ease-in-out;
 			}
@@ -101,5 +130,86 @@ p {
 
 	}
 }
+
+@media screen and (max-width:600px) {
+
+
+.top-nav {
+	height: 50px;
 }
 
+	h1 {
+		padding-left: 10px !important;
+	}
+	ul {
+		width: 100% !important;
+		background: black;
+		position: fixed;
+		height: 20%;
+		margin-top: 50px !important;
+		overflow: hidden;
+		max-height: 0;
+	}
+	li {
+		float: none!important;
+		display: block !important;
+		text-align: justify !important;
+		width: 100%!important;
+		padding: 15px;
+
+
+	}
+
+	.border-bottom {
+		display: none;
+	}
+
+	.center-btn {
+		float: none !important;
+		display: block !important;
+		width: 100% !important;
+	}
+
+		.menu-container {
+		display: table !important;
+		height: 100%;
+		float: right;
+
+
+		.menu {
+			display: table-cell!important;
+			vertical-align: middle;
+		}
+
+	}
+
+	.intro-1st-content {
+		  position: absolute;
+
+		  top:60px !important;
+		  padding: 50px 0 0 0;
+		  /*left: 30px;*/
+		  width: 100%;
+		  z-index: 200;
+		  margin: 0 auto !important;
+}
+
+
+.intro-1st-content a {
+	margin:0 auto;
+}
+
+#intro-1st p {
+text-align: center;
+font-size: 25px;
+}
+
+#intro-1st h1 {
+font-size: 50px;
+text-align: center;
+margin: 0 !important;
+padding: 0 !important;
+}
+
+
+}
