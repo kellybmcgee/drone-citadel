@@ -2,21 +2,38 @@ ul {border: 1px red solid;}
 li {border: 1px green solid;}
 h2 {border: 1px purple solid;}
 h4 {border: 1px orange solid;}
-h5 {border: 1px white solid;}
 a {border: 1px white yellow;}
-
-
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
 /*first banner*/
+
+.container-fluid {
+  background: rgba(209, 209, 209, 0.5);
+}
+
+.intro-content {
+  border: 1px black solid;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 10%;
+  width: 90%;
+}
 
 .intro-1st-content {
   position: absolute;
-  top: 180px;
+
+  top:100px;
+  padding: 120px 0 0 40px;
   /*left: 30px;*/
-  width: 75%;
-  z-index: 4444;
+  width: 90%;
+  z-index: 200;
+  margin: 0 auto;
 }
 
 #intro-1st h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   z-index: 20;
   color: white;
   padding: 0;
@@ -27,20 +44,42 @@ a {border: 1px white yellow;}
   color: white;
   padding: 0;
   margin: 0;
+  font-size: 25px;
+  text-transform: uppercase;
 }
 
-#intro-1st a {
-  color: white;
-  background: red;
-  padding: 16px 0;
-  width: 200px;
-  border-radius: 8px;
+.intro-1st-content a {
+  margin-top: 25px;
+  display: block;
+  padding: 20px 0;
+  width:222px;
   text-decoration: none;
-  text-align: center;
-  display:block;
-  background: red;
+  font-size: 35px;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+  transition: all .5s ease-in-out;
+
+
+  &:hover {
+    color:#F24236;
+  }
+
+
+  &:hover .btn-bottom {
+    max-width:0;
+  }
 }
 
+a .btn-bottom {
+  position:relative;
+  width: 100%;
+  bottom:20%;
+  max-width: 100%;
+  left: 0;
+  border-bottom: #F24236 3px solid;
+  transition:all .3s ease-in-out;
+}
 
 #intro-1st {
   height: 667px;
@@ -52,14 +91,18 @@ a {border: 1px white yellow;}
 #intro-2nd {
  background: lightgray;
 
+
+
 }
 
-.intro-content {
-  border: 1px black solid;
-  height: 100%;
-  margin: 0 auto;
-  margin-top: 10%;
-  width: 90%;
+@media screen and (max-width:600px) {
+  #intro-2nd h2 {
+    color: white;
+  }
+  #intro-2nd p {
+    color: white;
+  }
+
 }
 
 /*third banner*/
@@ -99,10 +142,4 @@ a {border: 1px white yellow;}
 
 #intro-5th {
   background: white;
-}
-
-
-@media screen and ( min-width: 600px ) {
-.intro-1st-content {
-}
 }
