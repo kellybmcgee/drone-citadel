@@ -1,6 +1,12 @@
 Template.about.events({
   'click .white-arrow': function (e) {
-    console.log("HI");
-    $(".bio-wrapper p").css("display", "static");
+    var target = e.currentTarget.nextElementSibling;
+    var thisTarget = $(target).attr("id");
+    $("#" + thisTarget).toggle(
+        function (target) {
+          $(this).addClass( "selected" );
+    },  function (target) {
+          $(this).removeClass( "selected" );
+    });
   }
 });

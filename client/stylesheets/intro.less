@@ -83,6 +83,7 @@ a .btn-bottom {
 
 #intro-1st {
   height: 667px;
+  position: relative;
 
 }
 
@@ -90,19 +91,21 @@ a .btn-bottom {
 
 #intro-2nd {
  background: lightgray;
+ top:0;
+ position:relative;
+ margin:0;
+ display: block;
+
 
 
 
 }
 
-@media screen and (max-width:600px) {
-  #intro-2nd h2 {
-    color: white;
-  }
-  #intro-2nd p {
-    color: white;
-  }
-
+.intro-content {
+  border: 1px black solid;
+  height: 100%;
+  margin: 0 auto;
+  width: 90%;
 }
 
 /*third banner*/
