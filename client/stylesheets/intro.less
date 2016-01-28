@@ -98,8 +98,13 @@ a .btn-bottom {
 }
 
 #intro-2nd {
+  background: rgb(94, 122, 139);
+  h2 {
+    color: white;
+  }
   p {
-    width: 50%;
+    width: 70%;
+    color: white;
   }
 }
 
@@ -132,16 +137,27 @@ a .btn-bottom {
     display: block;
   }
   img {
-    height: 80px;
-    width: 80px;
+    text-align: center;
+    height: 180px;
+    width: 220px;
   }
 
+#shift-right {
+  position: relative;
+  left: 8px;
+}
 /*fourth banner*/
 
 #intro-4th {
+  padding: 150px 0;
   background: lightgray;
+  background-image: url('img/trees.jpeg');
+  background-size: 100% 700px;
+  margin: 0;
+  background-repeat: no-repeat;
+  color: white;
   p {
-    width: 50%;
+    width: 65%;
   }
 }
 
@@ -150,10 +166,25 @@ a .btn-bottom {
     width: 280px;
 }
 
+@media screen and (max-width:600px) {
+  #intro-4th {
+    padding: 0;
+    background-size: auto;
+  }
+}
 
 #intro-5th {
-  background: white;
+  background: rgb(94, 122, 139);
   h2 {
     text-align: center;
+    color: white;
+  }
+  h4 {
+    text-align: center;
+    font-weight: 700;
+    color: white;
+  }
+  p {
+    color: white;
   }
 }

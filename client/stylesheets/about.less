@@ -1,5 +1,6 @@
 .container-fluid {
   background: rgba(209, 209, 209, 0.5);
+  display: block;
 }
 
 .row {
@@ -23,10 +24,14 @@
   }
   h1 {
     margin: 0 auto;
+    font-weight: 700;
     text-align: center;
   }
   h3 {
     width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
   }
 }
 
@@ -35,19 +40,34 @@
   display: block;
   height: 100%;
   background-image: url('img/office.jpeg');
-  background-size: 100%;
+  background-size: auto 100%;
   padding: 80px 0;
   background-repeat: no-repeat;
   h2 {
-    /*padding: 60px 0;*/
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(94, 122, 139);
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 2px 0 0 rgb(94, 122, 139), -2px 0 0 rgb(94, 122, 139), 0 2px 0 rgb(94, 122, 139), 0 -2px 0 rgb(94, 122, 139), 1px 1px rgb(94, 122, 139), -1px -1px 0 rgb(94, 122, 139), 1px -1px 0 rgb(94, 122, 139), -1px 1px 0 rgb(94, 122, 139);
+    color: white;
   }
   h3 {
+    color: rgb(94, 122, 139);
+    font-size: 30px;
     padding: 120px 0;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+    text-shadow: 2px 0 0 rgb(94, 122, 139), -2px 0 0 rgb(94, 122, 139), 0 2px 0 rgb(94, 122, 139), 0 -2px 0 rgb(94, 122, 139), 1px 1px rgb(94, 122, 139), -1px -1px 0 rgb(94, 122, 139), 1px -1px 0 rgb(94, 122, 139), -1px 1px 0 rgb(94, 122, 139);
+    color: white;
+    padding-top: 20px;
   }
 }
 
 .about-3rd {
-  background-color: #263248;
+  background-color: rgb(94, 122, 139);
   width: 100%;
   display: inline-block;
       text-align: center;
@@ -66,7 +86,11 @@
   .white-arrow {
     height: 50px;
     width: 50px;
-    border: white 1px solid;
+
+  }
+  .white-arrow:focus {
+    border: none;
+
   }
   h5 {
     color: white;
@@ -93,7 +117,13 @@
   color: white;
 }
 
+
+
+
+
 .selected {
+  transform: rotate(90deg);
+  transition: transform 1.5s;
   display: block;
 }
 
@@ -106,6 +136,8 @@
   -webkit-animation: animation 5000ms linear infinite both;
   animation: animation 5000ms linear infinite both;
 }
+
+
 
 /* Generated with Bounce.js. Edit at http://goo.gl/KzPaiQ */
 
