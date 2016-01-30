@@ -21,9 +21,8 @@ font-family: 'Lato', sans-serif;
 
 .intro-1st-content {
   position: absolute;
-
-  top:100px;
-  padding: 120px 0 0 40px;
+  top:120px;
+  padding: 120px 0 0 50px;
   /*left: 30px;*/
   width: 90%;
   z-index: 200;
@@ -48,38 +47,55 @@ font-family: 'Lato', sans-serif;
   text-transform: uppercase;
 }
 
-.intro-1st-content a {
-  margin-top: 25px;
+
+
+
+.btn-bottom {
   display: block;
-  padding: 20px 0;
+  height: 60px;
   width:222px;
   text-decoration: none;
   font-size: 35px;
   color: white;
   position: relative;
   text-transform: uppercase;
-  transition: all .5s ease-in-out;
+  text-align: center;
+  color:white;
+  font-size: 15px;
+  background:#F24236;
+  margin-top: 25px;
 
 
-  &:hover {
-    color:#F24236;
-  }
 
-
-  &:hover .btn-bottom {
-    max-width:0;
+  &:hover .slider {
+    max-height: 100%;
   }
 }
 
-a .btn-bottom {
-  position:relative;
-  width: 100%;
-  bottom:20%;
-  max-width: 100%;
+.btn-bottom .btn-text {
+  position: absolute;
+  margin:auto;
+  top:0;
+  right:0;
   left: 0;
-  border-bottom: #F24236 3px solid;
-  transition:all .3s ease-in-out;
+  bottom:0;
+  height: 18px;
+  transition: all .3s ease-in-out;
 }
+
+.btn-bottom .slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #5e7a8b;
+  transition: all .3s ease-in-out;
+  max-height: 0;
+}
+
+
+
 
 #intro-1st {
   height: 667px;
