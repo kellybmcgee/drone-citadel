@@ -32,7 +32,7 @@ Template.nav.onRendered(function() {
     };
 
     Menu.init();
-    
+
 	$(".menu").on("click", function() {
 		$(".center-btn ul").toggleClass("active");
         $(".top-nav").css("background", "#5e7a8b");
@@ -40,7 +40,13 @@ Template.nav.onRendered(function() {
 
     $("li a").on("click", function() {
         $(".center-btn ul").toggleClass("active");
+        Menu.el.menuTop.toggleClass('menu-top-click');
+        Menu.el.menuMiddle.toggleClass('menu-middle-click');
+        Menu.el.menuBottom.toggleClass('menu-bottom-click');
+        $(".top-nav").css("background", "none");
     });
+
+
 	
 
 
@@ -82,6 +88,8 @@ function hasScrolled() {
         // Scroll Down
         $('.top-nav').removeClass('nav-down').addClass('nav-up');
         $(".center-btn ul").removeClass('active');
+       
+
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
@@ -91,6 +99,5 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
-
 
 });
