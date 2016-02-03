@@ -13,7 +13,16 @@ $(".intro-1st-content a").on("click", function(){
             $(this).animate({'opacity':'1'},700);
           }
       });
+
+      if ($(this).scrollTop() > 1500) {
+		 	$("#absolute-scroll").animate({'opacity':'0'},700);
+		 } else {
+			$("#absolute-scroll").animate({'opacity':'1'},700);
+		 }
     });
+
+ 
+
 
  $(".hiw").on("click", function(){
 		$('html, body').animate({
