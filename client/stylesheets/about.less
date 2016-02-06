@@ -134,7 +134,10 @@ h5 span {
   font-size: 12px;
 }
 
-
+.bio-wrapper.bio {
+  max-height: 500px;
+  
+}
 
 .bio-wrapper {
   padding: 30px 0 0 0;
@@ -142,23 +145,21 @@ h5 span {
   display: block;
   position: relative;
   width: 25%;
+  max-height: 275px;
+  overflow: hidden;
+  transition: max-height .3s ease-in-out;
   height: 500px;
-  transition: all .6s ease;
+  transition: transform .6s ease;
   -webkit-transition: all .6s ease;
   transform-style: preserver-3d;
   -webkit-transform-style: preserver-3d;
   perspective: 800px;
   -webkit-perspective: 800px;
   opacity: 1;
+  cursor: pointer;
 }
 
-.bio-wrapper:nth-child(5) {transition-delay: .5s; -webkit-transition-delay: .5s;}
-.bio-wrapper:nth-child(6) {transition-delay: 1s; -webkit-transition-delay:1s;}
-.bio-wrapper:nth-child(7) {transition-delay: 1.5s; -webkit-transition-delay:1.5s;}
-.bio-wrapper:nth-child(8) {transition-delay: 2s; -webkit-transition-delay:2s;}
-.bio-wrapper:nth-child(9) {transition-delay: 2.5s; -webkit-transition-delay:2.5s;}
-.bio-wrapper:nth-child(10) {transition-delay: 3s; -webkit-transition-delay:3s;}
-.bio-wrapper:last-child {transition-delay: 3.5s; -webkit-transition-delay:3.5s;}
+
 .bio-wrapper.push {
   opacity: .1;
   transform: translateY(-10%);
@@ -188,7 +189,7 @@ h5 span {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .bio-wrapper {
   padding: 30px 0;
   display: block;
