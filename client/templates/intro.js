@@ -1,25 +1,45 @@
 Template.intro.onRendered(function() {
 $(".intro-1st-content a").on("click", function(){
 		$('html, body').animate({
-			scrollTop: $("#intro-2nd").offset().top},
+			scrollTop: $(".intro-content").offset().top},
 			'slow');
 		});
 
- $(window).scroll( function(){
-      $('.fade-in').each( function(i) {
-         var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-         var bottom_of_window = $(window).scrollTop() + $(window).height();
-         if( bottom_of_window > bottom_of_object ){
-            $(this).animate({'opacity':'1'},700);
-          }
-      });
 
-      if ($(this).scrollTop() > 1500) {
-		 	$("#absolute-scroll").animate({'opacity':'0'},700);
-		 } else {
-			$("#absolute-scroll").animate({'opacity':'1'},700);
-		 }
+
+  
+
+
+  $(window).scroll( function(event){
+      var y = $(this).scrollTop();
+         if( y > 640 ){
+            $('.intro-content').removeClass('hidden');
+          }
+
+
+         if( y > 1200 ){
+            $('.normal').removeClass('fly-in');
+          } 
+
+           if( y > 1800){
+            $('.normal2').removeClass('fly-in2');
+          } 
+
+           if( y > 2300 ){
+            $('.normal3').removeClass('fly-in3');
+          } 
+
+          if( y > 2900 ){
+            $('.normal4').removeClass('fly-in4');
+          } 
+
     });
+
+
+
+
+
+
 
  
 
