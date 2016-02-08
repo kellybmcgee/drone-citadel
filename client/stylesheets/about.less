@@ -1,3 +1,7 @@
+.main-container .main-content {
+  background: lightgray !important;
+}
+
 .container-fluid {
   background-image: url(public/img/99.jpg);
   display: block;
@@ -8,15 +12,49 @@
   display: block;
 }
 
+.header-background{
+  width: 100%;
+  height: 300px;
+  display: table;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ background-image: url(img/airport.jpeg);
+ background-attachment: fixed;
+ background-position: 0, 50%;
+ transition: all .2s ease;
+ -webkit-transition: all .2s ease;
+ overflow: hidden;
+   -webkit-box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
+-moz-box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
+box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
+}
+
+.header-background.scrolling{
+background-position: 0, 100%;
+}
+
+.bio-wrapper-background {
+  width: 100%;
+  height: 1150px;
+  background: white;
+  margin-bottom: 17px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
+-moz-box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
+box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
+}
+
 .about-header {
+  text-align: center;
+ display: table-cell;
+ vertical-align: middle;
  color: white;
  text-transform: uppercase;
  font-weight: 400;
  letter-spacing: 1.5px;
- line-height: 10px;
+ line-height: 20px;
  position: relative;
  margin: 0;
- padding-top: 20px;
  font-size: 25px;
 
     span {
@@ -25,9 +63,9 @@
       &:before, &:after {
           content: "";
           position: absolute;
-          height: 10px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-          border-top: 1px solid rgba(255, 255, 255, 0.5);
+          height: 20px;
+          border-bottom: 2px solid rgb(255, 255, 255);
+          border-top: 2px solid rgb(255, 255, 255);
           top: 0;
           width: 75%;
 
@@ -48,7 +86,7 @@
 
 
 .about-1st {
-  background-color: lightgray;
+  background-color: white;
   display: block;
   text-align: center;
   padding: 80px 0;
@@ -80,7 +118,7 @@
     color: rgb(94, 122, 139);
     font-size: 40px;
     text-shadow: 2px 0 0 rgb(94, 122, 139), -2px 0 0 rgb(94, 122, 139), 0 2px 0 rgb(94, 122, 139), 0 -2px 0 rgb(94, 122, 139), 1px 1px rgb(94, 122, 139), -1px -1px 0 rgb(94, 122, 139), 1px -1px 0 rgb(94, 122, 139), -1px 1px 0 rgb(94, 122, 139);
-    color: white;
+    color: black;
   }
   h3 {
     color: rgb(94, 122, 139);
@@ -90,20 +128,21 @@
     text-align: center;
     margin: 0 auto;
     text-shadow: 2px 0 0 rgb(94, 122, 139), -2px 0 0 rgb(94, 122, 139), 0 2px 0 rgb(94, 122, 139), 0 -2px 0 rgb(94, 122, 139), 1px 1px rgb(94, 122, 139), -1px -1px 0 rgb(94, 122, 139), 1px -1px 0 rgb(94, 122, 139), -1px 1px 0 rgb(94, 122, 139);
-    color: white;
+    color: black;
     padding-top: 20px;
   }
 }
 
 .about-3rd {
-  background-color: rgb(94, 122, 139);
+  
   width: 100%;
+  background-repeat: no-repeat;
   display: inline-block;
       text-align: center;
   .about-content {
       height: auto;
-      margin: 50px auto;
-      width: 95%;
+      margin: 60px auto 0 auto;
+      width: 97%;
     }
   .bounce-img {
     border-radius: 50%;
@@ -114,7 +153,7 @@
 
  
   h5 {
-    color: white;
+    color: black;
     font-size: 15px;
     margin: 20px auto;
     border-radius: 8px;
@@ -134,10 +173,7 @@ h5 span {
   font-size: 12px;
 }
 
-.bio-wrapper.bio {
-  max-height: 500px;
-  
-}
+
 
 .bio-wrapper {
   padding: 30px 0 0 0;
@@ -145,10 +181,9 @@ h5 span {
   display: block;
   position: relative;
   width: 25%;
-  max-height: 275px;
   overflow: hidden;
   transition: max-height .3s ease-in-out;
-  height: 500px;
+  height: 300px;
   transition: transform .6s ease;
   -webkit-transition: all .6s ease;
   transform-style: preserver-3d;
@@ -157,6 +192,13 @@ h5 span {
   -webkit-perspective: 800px;
   opacity: 1;
   cursor: pointer;
+}
+
+.bio-wrapper:nth-child(9) {
+  height: 400px;
+}
+.bio-wrapper:last-child {
+  height: 400px;
 }
 
 
@@ -169,14 +211,17 @@ h5 span {
 
 .bio-wrapper p {
   font-size: 14px;
-  display:block;
-  color: white;
+  display:none;
+  color: black;
   width: 75%;
   margin: 10px auto;
   border-top: rgba(255, 255, 255, 0.1) solid 1px;
   padding-top: 10px;
 
+
 }
+
+
 
 
 
@@ -198,6 +243,17 @@ h5 span {
 
 }
 
+.bio-wrapper-background {
+  height: 1650px;
+  background: white;
+  margin-bottom: 15px;
+ 
+}
+
+.bio-wrapper:nth-child(9) {
+  height: 300px;
+}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -210,9 +266,20 @@ h5 span {
 
 }
 
+.bio-wrapper-background {
+  height: 1900px;
+  background: white;
+  margin-bottom: 10px;
+ 
+}
+
 }
 
 @media screen and (max-width: 600px) {
+
+  .about-3rd .about-content {
+    margin: 50px auto 0 auto;
+  }
   .about-header {
     margin: 0;
     padding-left: 0 !important;
@@ -227,6 +294,13 @@ h5 span {
   position: relative;
   width: 100%;
 
+}
+
+.bio-wrapper-background {
+  height: 3750px;
+  background: white;
+  margin-bottom: 11px;
+ 
 }
 
 
