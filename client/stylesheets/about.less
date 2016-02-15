@@ -36,12 +36,28 @@ background-position: 0, 100%;
 
 .bio-wrapper-background {
   width: 100%;
-  height: 1150px;
+  height: 1350px;
   background: white;
   margin-bottom: 17px;
   -webkit-box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
 -moz-box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
 box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
+}
+.intro-about-header {
+  width: 45%;
+  text-align: center;
+  padding-top: 30px;
+  margin: 0 auto;
+  font-size: 25px;
+  padding-bottom: 20px;
+  border-bottom: rgba(209, 209, 209, 0.5) solid 1px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.intro-about-header span {
+  border-bottom: #F24236 solid 3px;
+  font-weight: 600;
 }
 
 .about-header {
@@ -56,6 +72,7 @@ box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
  position: relative;
  margin: 0;
  font-size: 25px;
+
 
     span {
        display: inline-block;
@@ -221,6 +238,10 @@ h5 span {
 
 }
 
+.bio-wrapper .modal {
+  display: none;
+}
+
 
 
 
@@ -244,7 +265,7 @@ h5 span {
 }
 
 .bio-wrapper-background {
-  height: 1650px;
+  height: 1700px;
   background: white;
   margin-bottom: 15px;
  
@@ -257,6 +278,14 @@ h5 span {
 }
 
 @media screen and (max-width: 800px) {
+  .bio-wrapper .modal {
+  display: block;
+}
+
+.bio-wrapper .modal.open {
+  display: block;
+}
+
   .bio-wrapper {
   padding: 30px 0;
   float: right;
@@ -267,7 +296,7 @@ h5 span {
 }
 
 .bio-wrapper-background {
-  height: 1900px;
+  height: 2075px;
   background: white;
   margin-bottom: 10px;
  
@@ -276,12 +305,31 @@ h5 span {
 }
 
 @media screen and (max-width: 600px) {
+.intro-about-header {
+  width: 75%;
+}
+  .header-background{
+  width: 100%;
+  height: 300px;
+  display: table;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(img/airport.jpeg);
+  background-attachment: fixed;
+  background-position: 0, 50%;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
+  box-shadow: 2px 2px 5px 0px rgba(143,137,143,1);
+}
 
   .about-3rd .about-content {
     margin: 50px auto 0 auto;
   }
   .about-header {
-    margin: 0;
     padding-left: 0 !important;
     font-size: 20px;
 
@@ -297,7 +345,7 @@ h5 span {
 }
 
 .bio-wrapper-background {
-  height: 3750px;
+  height: 4000px;
   background: white;
   margin-bottom: 9px;
  

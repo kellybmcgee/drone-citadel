@@ -4,9 +4,9 @@ $(".intro-1st-content a").on("click", function(){
 			scrollTop: $(".intro-content").offset().top},
 			'slow');
 		});
-
-
-
+$('li:last-child a').css('color', '#F24236');
+$('li:nth-child(2) a').css('color', 'white');
+$('li:first-child a').css('color', 'white');
   
 
 
@@ -14,24 +14,37 @@ $(".intro-1st-content a").on("click", function(){
       var y = $(this).scrollTop();
          if( y > 640 ){
             $('.intro-content').removeClass('hidden');
+          } else {
+              $('.intro-content').addClass('hidden');
+
           }
 
 
          if( y > 1200 ){
             $('.normal').removeClass('fly-in');
-          } 
+          } else {
+            $('.normal').addClass('fly-in');
+
+          }
 
            if( y > 1800){
             $('.normal2').removeClass('fly-in2');
-          } 
+          } else {
+            $('.normal2').addClass('fly-in2');
+
+          }
 
            if( y > 2300 ){
             $('.normal3').removeClass('fly-in3');
-          } 
+          } else {
+            $('.normal3').addClass('fly-in3');
+          }
 
           if( y > 2900 ){
             $('.normal4').removeClass('fly-in4');
-          } 
+          } else {
+            $('.normal4').addClass('fly-in4');
+          }
 
     });
 
