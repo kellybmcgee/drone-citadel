@@ -1,11 +1,7 @@
     if(Meteor.isClient) {
 
 
-    Template.about.events({
-    'click .bio-wrapper':function(event, template){
-        template.$('.modal').toggleClass('open');
-    }
-});
+ 
     
 
     Template.about.onRendered(function() {
