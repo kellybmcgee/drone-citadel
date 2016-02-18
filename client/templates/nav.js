@@ -44,6 +44,7 @@ Template.nav.onRendered(function() {
 	$(".menu").on("click", function() {
 		$(".center-btn ul").toggleClass("active");
         $(".top-nav").css("background", "#5e7a8b");
+        $("#login-sign-in-link").toggleClass("see");
 	});
 
     $("li a").on("click", function() {

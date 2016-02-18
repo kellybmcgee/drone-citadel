@@ -52,7 +52,7 @@ a {
 		height: 100%;
 		float: right;
 		padding-right: 12px;
-		padding-top: 6px;
+		padding-top: 7.2px;
 
 		.menu {
 			display: none;
@@ -70,6 +70,7 @@ a {
 
 	.menu-global {
 	  backface-visibility: hidden;
+
 	  position: absolute;
 	  left: 0;
 	  border-top: 3px solid white;
@@ -89,7 +90,8 @@ a {
 	.menu-top-click {
 	  backface-visibility: hidden;
 	  top: 8px;
-	  transform: rotate(50deg);
+	  -webkit-transform: rotate(50deg);
+	 	-moz-transform: rotate(50deg);
 	  transition: 0.55s 0.5s;
 	}
 	.menu-middle-click {
@@ -98,7 +100,8 @@ a {
 	.menu-bottom-click {
 	  backface-visibility: hidden;
 	  top: 8px;
-	  transform: rotate(-410deg);
+	  -webkit-transform: rotate(-410deg);
+	  -moz-transform: rotate(-410deg);
 	  transition: 0.55s 0.5s;
 	}
 
@@ -281,12 +284,24 @@ a {
 
 
 @media screen and (max-width:675px) {
+	#login-buttons a, .accounts-dialog a {
+		
+				margin-top: 5.5px;
+			
+
+			}
 
 	#login-sign-in-link {
 	background: #5e7a8b;
 	margin-right: 15px!important;
 	border:2px #5BC0BE solid;
+	transition: all .3s ease-in-out;
+	opacity:0;
 }
+#login-sign-in-link.see {
+	opacity: 1;
+}
+
 .profile-contain {
 	float: right;
 }
