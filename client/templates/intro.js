@@ -1,21 +1,16 @@
 Template.intro.onRendered(function() {
-$(".intro-1st-content a").on("click", function(){
-		$('html, body').animate({
-			scrollTop: $(".intro-content").offset().top},
-			'slow');
-		});
-$('li:last-child a').css('color', 'white');
-$('li:nth-child(2) a').css('color', 'white');
-$('li:first-child a').css('color', 'white');
-  
+
+ $('li:last-child a').css('color', 'white');
+    $('li:nth-child(2) a').css('color', 'white');
+    $('li:first-child a').css('color', 'white');
 
 
   $(window).scroll( function(event){
       var y = $(this).scrollTop();
          if( y > 640 ){
-            $('.intro-content').removeClass('hidden');
+            $('.intro-content1').removeClass('hidden');
           } else {
-              $('.intro-content').addClass('hidden');
+              $('.intro-content1').addClass('hidden');
 
           }
 
@@ -49,8 +44,12 @@ $('li:first-child a').css('color', 'white');
     });
 
 
-
-
+$(".btn-bottom").on("click", function(){
+    $('html, body').animate({
+      scrollTop: $("#intro-2nd").offset().top},
+      'slow');
+    });
+  
 
 
 

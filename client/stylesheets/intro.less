@@ -11,7 +11,7 @@ font-family: 'Lato', sans-serif;
 
 
 
-.intro-content {
+.intro-content1 {
   height: 100%;
   margin: 0 auto;
   margin-top: 10%;
@@ -19,9 +19,13 @@ font-family: 'Lato', sans-serif;
   text-align: center;
   position:relative;
   display:block;
+    transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: all .8s ease;
+  perspective:800px;
 }
 
-.intro-content p {
+.intro-content1 p {
   text-align: center;
 }
 
@@ -44,7 +48,7 @@ font-family: 'Lato', sans-serif;
 
 .intro-1st-content {
   position: absolute;
-  top:120px;
+  top:130px;
   padding: 140px 0 0 50px;
   /*left: 30px;*/
   width: 90%;
@@ -178,7 +182,7 @@ font-family: 'Lato', sans-serif;
   }
 }
 
-.intro-content {
+.intro-content1 {
   height: 100%;
   margin: 0 auto;
   width: 90%;
@@ -353,7 +357,7 @@ font-family: 'Lato', sans-serif;
 
   }
 
-.intro-content {
+.intro-content1 {
   height: 600px;
   display: table-cell;
   vertical-align: middle;
@@ -364,7 +368,7 @@ font-family: 'Lato', sans-serif;
 
 }
 
-.intro-content.hidden {
+.intro-content1.hidden {
   opacity: 0;
   transform: translateY(5%);
 }
