@@ -1,16 +1,13 @@
 Template.intro.onRendered(function() {
 
- $('li:last-child a').css('color', 'white');
-    $('li:nth-child(2) a').css('color', 'white');
-    $('li:first-child a').css('color', 'white');
 
 
   $(window).scroll( function(event){
       var y = $(this).scrollTop();
          if( y > 640 ){
-            $('.intro-content1').removeClass('hidden');
+            $('.intro-content1').removeClass('hidden1');
           } else {
-              $('.intro-content1').addClass('hidden');
+              $('.intro-content1').addClass('hidden1');
 
           }
 
