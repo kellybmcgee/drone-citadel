@@ -18,21 +18,26 @@ p {
 	transition: all .5s ease-in-out;
 	background: none;
 	max-height: 60px;
-	top:0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.2);
 
 
 
-
-	h1 {
-		display: table-cell;
+a {
+	text-decoration: none;
+	display: table-cell;
 		vertical-align: middle;
+	h1 {
 		margin: 0;
 		color: white;
 		font-size: 20px;
 		letter-spacing: 5px;
-		padding-left:25px;
+		padding-left:30px;
 
 	}
+
+}
+
 
 	.center-header {
 		display: table;
@@ -101,7 +106,18 @@ p {
 		height: 100%;
 		display: table;
 		float: right;
-		width: 50%;
+		width: 470px;
+	}
+
+	.profile {
+			display:table-cell;
+		vertical-align: middle;
+		
+
+		a {
+			float: right;
+			display: block;
+		}
 	}
 
 	ul {
@@ -109,36 +125,24 @@ p {
 		border: none;
 		display:table-cell;
 		vertical-align: middle;
-		padding-right: 10px;
-
+		width: 80%;
 		li {
 			display: inline-block;
 			float: right;
 			border: none;
-			width: 75px;
-			margin-right: 25px;
+			margin-right: 19px;
 			text-align: center;
 			position: relative;
 
 
 				&:first-child {
-					width: 72px;
-					margin-right: 20px;
-
-				}
-
-				&:nth-child(2){
-					width: 52px;
-				}
-
-				&:last-child{
-					width:45px;
-
+					margin-right: 19px;
 				}
 
 				
-					
+		
 
+	
 
 			a {
 				text-decoration: none;
@@ -174,7 +178,90 @@ p {
 	}
 }
 
+.profile-contain {
+		float: left;
+		display: table;
+		height: 100%;
+}
 
+			
+			#login-buttons a, .accounts-dialog a {
+				text-decoration: none !important;
+				font-size: 12.5px;
+				font-family: 'Lato', sans-serif;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				color: white;
+				padding-top: 5.25px;
+			}
+					.accounts-dialog {
+						z-index: 1002!important;
+						position: fixed!important;
+						margin: 200px auto;
+						left: 0;
+						right: 0;
+
+					}
+
+					#login-buttons .login-button, .accounts-dialog .login-button {
+						font-family: 'Lato', sans-serif !important;
+						letter-spacing: 2px;
+						text-transform: uppercase;
+					}
+
+					#login-buttons .login-close-text {
+    float: right;
+    color: black !important;
+    position: relative;
+    padding-bottom: 7px;
+    font-weight: lighter;
+}
+
+
+
+#back-to-login-link {
+	width: 100%;
+	text-align: center;
+	color: black !important;
+}
+
+.accounts-dialog .login-button-form-submit {
+	margin-top: 12px;
+}
+
+.accounts-dialog label, .accounts-dialog .title {
+	color: black;
+	font-weight: lighter;
+	text-align: justify !important;
+	float: left;
+	letter-spacing: 1px;
+	padding-bottom: 3px;
+}
+
+#login-buttons #signup-link {
+	color: black;
+	font-size: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+#login-buttons #forgot-password-link {
+	color: black;
+	font-size: 8px;
+	float: right;
+}
+
+#login-buttons .login-button, .accounts-dialog .login-button {
+	border-radius: 25px;
+	background: #F24236;
+	border:1px solid #F24236;
+	transition: all .3s ease-in-out;
+
+	&:hover {
+		background: #5e7a8b;
+		border:1px solid #5e7a8b;
+	}
+}
 
 .top-nav.nav-up {
 	top: -60px;
@@ -182,8 +269,13 @@ p {
 }
 
 
-@media screen and (max-width:600px) {
 
+@media screen and (max-width:675px) {
+
+.profile-contain {
+	float: right;
+	margin-right: 10px;
+}
 
 .top-nav {
 	height: 50px;

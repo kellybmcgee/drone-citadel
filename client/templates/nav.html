@@ -1,7 +1,7 @@
 <template name="nav">
   <nav class="top-nav">
     <div class="center-header">
-      <h1>CITADEL</h1>
+      <a href="/" tabindex="0"><h1>CITADEL</h1></a>
     </div>
     <div class="menu-container">
     	<div class="menu">
@@ -11,11 +11,15 @@
     	</div>
     </div>
     <div class="center-btn">
+     
       <ul>
         <li><a href="/contact" tabindex="0">Contact</a><div class="border-bottom"></div></li>
         <li><a href="/about" tabindex="0">About</a><div class="border-bottom"></div></li>
-        <li><a href="/" tabindex="0">Home</a><div class="border-bottom"></div></li>
+        <li><a href="/">FAQ</a></li>
       </ul>
+       <div class ="profile-contain">
+        <div class = "profile">{{> loginButtons}}</div>
+      </div>
     </div>
   </nav>
 </template>
