@@ -245,9 +245,13 @@ h5 span {
   height: 100%;
   text-align: center;
   border-top: rgba(255, 255, 255, 0.1) solid 1px;
-  padding-top: 10px;
   opacity: 0;
+  padding: 10px 10px;
   -webkit-transition: opacity .3s ease-in-out;
+
+}
+
+.modal p {
 
 }
 
@@ -282,6 +286,15 @@ p h2 {
 
 
 @media screen and (max-width: 1200px) {
+
+
+.bio-wrapper .modal {
+  
+
+  padding: 15px;
+
+
+}
   .bio-wrapper p {
   display: table-cell;
   vertical-align: middle;
@@ -371,6 +384,15 @@ p h2 {
 }
 
 @media screen and (max-width: 600px) {
+
+  .bio-wrapper .modal {
+  
+
+  padding: 15px 20px;
+  -webkit-transition: opacity .3s ease-in-out;
+
+}
+
   .bio-wrapper p {
   display: table-cell;
   vertical-align: middle;
