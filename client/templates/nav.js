@@ -42,16 +42,14 @@ Template.nav.onRendered(function() {
     Menu.init();
 
 	$(".menu").on("click", function() {
-		$(".center-btn ul").toggleClass("active");
-        $("#login-sign-in-link").toggleClass("see");
+		$(".center-btn").toggleClass('active');
 	});
 
     $("li a").on("click", function() {
-        $(".center-btn ul").toggleClass("active");
+        $(".center-btn").toggleClass('active');
         Menu.el.menuTop.toggleClass('menu-top-click');
         Menu.el.menuMiddle.toggleClass('menu-middle-click');
         Menu.el.menuBottom.toggleClass('menu-bottom-click');
-        $("#login-sign-in-link").toggleClass("see");
     });
 
 
