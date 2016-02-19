@@ -5,15 +5,7 @@
     
 
     Template.about.onRendered(function() {
-    $('.top-nav').css('background','none');
 
-    $(window).scroll(function(){
-         if ($(this).scrollTop() > 665) {
-            $(".top-nav").css("background", "#5e7a8b");
-         } else {
-            $(".top-nav").css("background", "none");
-         }
-    });
 
     $(window).scroll(function(event) {
         var x = $(this).scrollTop();

@@ -52,7 +52,6 @@ Template.nav.onRendered(function() {
         Menu.el.menuTop.toggleClass('menu-top-click');
         Menu.el.menuMiddle.toggleClass('menu-middle-click');
         Menu.el.menuBottom.toggleClass('menu-bottom-click');
-        $(".top-nav").css("background", "rgba(0, 0, 0, 0.2)");
     });
 
 
@@ -63,7 +62,7 @@ Template.nav.onRendered(function() {
 		 if ($(this).scrollTop() > 665) {
 		 	$(".top-nav").css("background", "#5e7a8b");
 		 } else {
-			$(".top-nav").css("background", "rgba(0, 0, 0, 0.2)");
+            $(".top-nav").css("background", "none");
 		 }
 	});
 
