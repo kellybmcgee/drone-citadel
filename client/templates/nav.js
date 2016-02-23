@@ -46,7 +46,7 @@ Template.nav.onRendered(function() {
 	});
 
     $("li a").on("click", function() {
-        $(".center-btn").toggleClass('active');
+         $(".center-btn").toggleClass('active');
         Menu.el.menuTop.toggleClass('menu-top-click');
         Menu.el.menuMiddle.toggleClass('menu-middle-click');
         Menu.el.menuBottom.toggleClass('menu-bottom-click');
