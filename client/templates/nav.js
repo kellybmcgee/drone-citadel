@@ -58,20 +58,12 @@ Template.nav.onRendered(function() {
 
 	$(window).scroll(function(){
 		 if ($(this).scrollTop() > 665) {
-		 	$(".top-nav").css("background", "white");
-            $(".top-nav h1").css("color", "#333333");
-            $("li a").css("color","#333333");
-            $("#login-buttons a").css("color", "#333333");
-            $("#login-sign-in-link").css("border", "2px #333333 solid");
-            $("#login-name-link").css("border", "2px #333333 solid");
+		 	$(".top-nav").css("background", "#333333");
+
 
 		 } else {
             $(".top-nav").css("background", "none");
-            $(".top-nav h1").css("color", "white");
-            $("li a").css("color","white");
-            $("#login-buttons a").css("color", "white");
-            $("#login-sign-in-link").css("border", "2px white solid");
-            $("#login-name-link").css("border", "2px white solid");
+        
 		 }
 	});
 
