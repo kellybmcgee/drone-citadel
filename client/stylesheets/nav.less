@@ -143,12 +143,25 @@ a {
 			margin-right: 25px;
 			text-align: center;
 			position: relative;
+
+
 			
 
 
 				&:first-child {
-					margin-right: 25px;
+					margin-right: 0px;
+					
 				}
+
+				&:nth-child(2){
+					padding: 11px 0;
+
+				}
+
+				&:last-child{
+					padding:11px 0;
+				}
+
 
 				
 		
@@ -209,7 +222,7 @@ a {
 
 			}
 					.accounts-dialog {
-						z-index: 1002!important;
+						z-index: 1005!important;
 						position: fixed!important;
 						margin: 150px auto;
 						left: 0;
@@ -295,6 +308,15 @@ a {
 		border:2px white solid;
 	}
 
+	.profile-contain {
+		float: left;
+		display: none;
+		height: 100%;
+}
+
+	.profile-contain.display {
+		display: table;
+	}
 
 			#login-buttons a, .accounts-dialog a {
 				text-decoration: none !important;
@@ -312,18 +334,6 @@ a {
 		font-size: 20px !important;
 	}
 
-	.profile-contain {
-		float: none;
-		position: absolute;
-		z-index: 1000;
-		width: 100%;
-		text-align: center;
-		left: 0;
-		right: 0;
-		height: 50px;
-		top: 250px;
-		margin:0 auto;
-}
 
 	#login-sign-in-link {
 	margin-right: 0 !important;
@@ -347,14 +357,18 @@ a {
 		padding-left: 10px !important;
 	}
 	.top-nav ul {
-		height: 100%;
-		width: 100% !important;
-		position: fixed;
-		z-index: 1000;
-		overflow: hidden;
 		transition: all .5s ease-in-out;
 		margin-left: 0 !important;
 		padding-left: 0 !important;
+		position: fixed;
+		max-height: 0 !important;
+		float: none!important;
+		z-index: 1001;
+		background-image: url(img/congruent_outline.png);
+		height: 100% !important;
+		width: 100% !important;
+		overflow: hidden !important;
+		transition: all .3s ease-in-out;
 
 	}
 
@@ -362,9 +376,6 @@ a {
 		margin-top: 20px !important;
 	}
 
-	.top-nav ul.active {
-		opacity:1;
-	}
 	.top-nav .profile {
 		display: block !important;
 
@@ -374,11 +385,13 @@ a {
 		display: block !important;
 		text-align: center !important;
 		width: 100%!important;
-		padding: 30px 0;
+		padding: 30px 0 !important;
 		transition: all .3s ease-in-out;
 		font-size: 30px;
+		margin: 0 !important;
 		&:first-child {
-			padding-top: 80px;
+			margin-top: 60px !important;
+			padding: 25px 0 !important;
 		}
 	}
 
@@ -387,21 +400,11 @@ a {
 	}
 
 	.center-btn {
-		position: fixed;
-		background-color: none;
-		max-height: 0;
-		z-index: 1001;
-		background-image: url(img/congruent_outline.png);
-		max-height: 0;
-		width: 0;
-		overflow: hidden;
-		transition: all .3s ease-in-out;
+	
 	}
 
-	.center-btn.active {
-		display: table!important;
-		max-height: 100%;
-		width: 100% !important;
+	.top-nav ul.active {
+		max-height: 100% !important;
 	}
 
 		.menu-container {

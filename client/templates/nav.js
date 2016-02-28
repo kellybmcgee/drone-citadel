@@ -42,11 +42,12 @@ Template.nav.onRendered(function() {
     Menu.init();
 
 	$(".menu").on("click", function() {
-		$(".center-btn").toggleClass('active');
+		$(".top-nav ul").toggleClass('active');
+
 	});
 
     $("li a").on("click", function() {
-        $(".center-btn").toggleClass('active');
+        $(".top-nav ul").toggleClass('active');
         Menu.el.menuTop.toggleClass('menu-top-click');
         Menu.el.menuMiddle.toggleClass('menu-middle-click');
         Menu.el.menuBottom.toggleClass('menu-bottom-click');
@@ -95,7 +96,6 @@ function hasScrolled() {
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
         $('.top-nav').removeClass('nav-down').addClass('nav-up');
-        $(".center-btn ul").removeClass('active');
        
 
     } else {
