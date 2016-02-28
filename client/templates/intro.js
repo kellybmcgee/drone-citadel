@@ -19,7 +19,7 @@ Template.intro.onRendered(function() {
 
           }
 
-           if( y > 1800){
+           if( y > 1900){
             $('.normal2').removeClass('fly-in2');
           } else {
             $('.normal2').addClass('fly-in2');
