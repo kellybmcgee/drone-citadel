@@ -1,3 +1,40 @@
+@media screen and (max-width: 1400px) {
+  #vanilla-slideshow-container {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+
+#vanilla-slideshow .vanilla-slide {
+  width: 100%;
+  height: 100%;
+  background-size: auto 100%;
+  background-position: 25% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#vanilla-slideshow .vanilla-slide img {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  float:left;
+}
+
+
+}
+
+
 @media screen and (min-width: 1500px) {
 
 
@@ -21,7 +58,7 @@
 
 #vanilla-slideshow-container {
   width: 100%;
-  height: 707px;
+  height: view height;
   z-index: 10;
   position: absolute;
   top: 0;
@@ -30,7 +67,7 @@
 
 #vanilla-slideshow .vanilla-slide {
   width: 100%;
-  height: 707px;
+  height: view height;
   background-size: auto 100%;
   background-position: 25% 50%;
   background-repeat: no-repeat;
@@ -47,7 +84,7 @@
 
 #vanilla-slideshow .vanilla-slide img {
   min-height: 100%;
-  height: 707px;
+  height: view height;
   width: 100%;
   min-width: 100%;
   position: relative;

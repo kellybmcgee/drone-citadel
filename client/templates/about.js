@@ -6,7 +6,7 @@
 
     Template.about.onRendered(function() {
 $("li:nth-child(2) a").css("color", "white");
-$("li:last-child a").css("color", "#605F5E");
+$("li:last-child a").css("color", "#FB3640");
     $(window).scroll(function(event) {
         var x = $(this).scrollTop();
 
