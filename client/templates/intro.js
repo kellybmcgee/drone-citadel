@@ -3,6 +3,7 @@ Template.intro.onRendered(function() {
   $("li:nth-child(2) a").css("color", "white");
 $("li:last-child a").css("color", "white");
 
+
   $(window).scroll( function(event){
       var y = $(this).scrollTop();
          if( y > 640 ){
