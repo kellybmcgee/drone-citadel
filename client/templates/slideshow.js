@@ -10,7 +10,7 @@ Template.intro.onRendered( function () {
 
    // default properties
    var defaults = {
-     delay: 11000,
+     delay: 12000,
      arrows: true,
      indicators: true,
      random: false,
@@ -247,7 +247,7 @@ Template.intro.onRendered( function () {
        // auto slideshow, options: true or false
        slideshow: true,
        // slideshow delay
-       delay: 11000,
+       delay: 12000,
        // display arrows, options: true or false
        arrows: true,
        // display indicators, options: true or false
